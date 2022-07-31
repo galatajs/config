@@ -1,0 +1,12 @@
+{
+  "name": "@istanbul/config",
+  "version": "0.0.1",
+  "description": "Config package of Istanbul Framework",
+  "keywords": [
+    "istanbul",
+    "istanbuljs",
+    "config"
+  ],
+  "author": "Sami Salih İBRAHİMBAŞ",
+  "license": "MIT"
+}
