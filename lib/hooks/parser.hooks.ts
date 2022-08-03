@@ -11,6 +11,8 @@ const getParserForExtension = <T>(
       return new JsonParser<T>();
     case "yml":
       return new YamlParser<T>();
+    case "yaml":
+      return new YamlParser<T>();
     case "env":
       return new DotenvParser();
     default:

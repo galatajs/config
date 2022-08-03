@@ -9,14 +9,18 @@
   ],
   "author": "Sami Salih İBRAHİMBAŞ",
   "license": "MIT",
-  "dependencies": {
-    "@istanbul/app": "^0.0.24"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^18.6.3",
     "typescript": "^4.7.4"
   },
   "optionalDependencies": {
     "yaml": "^2.1.1"
+  },
+  "scripts": {
+    "test": "node --no-warnings --test",
+    "clear": "del-cli ./dist/*",
+    "build": "npm run clear && tsc",
+    "production": "npm run build && npm run test"
   }
 }

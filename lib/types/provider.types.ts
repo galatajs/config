@@ -1,5 +1,3 @@
-import { Parser } from "../parser/parser";
-
 export type PathsWithAppEnv = {
   production?: string;
   development?: string;
@@ -14,14 +12,15 @@ export function isPathWithAppEnv(env: any): env is PathsWithAppEnv {
 export interface ProviderOptions {
   /**
    * The path to the config file.
-   * @default "./config/config.env"
-   * @type {string | PathsWithAppEnv}
+   * @default ["./config/config.env"]
+   * @type {string[]}
    * @memberof ProviderOptions
-   * @example "./config.json"
-   * @example "./config.env"
-   * @example "./config.yaml"
+   * @example ["./config.json"]
+   * @example ["./config.env"]
+   * @example ["./config.yaml"]
+   * @example ["./config.yml", "./config.env"]
+   * @example ["./config.json", "./config.env", "./config.yml"]
    */
-  path: string | PathsWithAppEnv;
+  paths: string[];
   useToApp?: boolean;
-  parser?: Parser<any>;
 }
