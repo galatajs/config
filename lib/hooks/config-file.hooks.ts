@@ -1,16 +1,9 @@
 import fs from "node:fs";
 import nodePath from "node:path";
 import { Parser } from "../parser/parser";
-import { NodeEnvs } from "../types/types";
 
 export const getConfigFile = (path: string): string => {
   return fs.readFileSync(path, "utf8");
-};
-
-const setAppEnv = (env: NodeEnvs): void => {
-  global.__DEV__ = env === NodeEnvs.development;
-  global.__PROD__ = env === NodeEnvs.production;
-  global.__TEST__ = env === NodeEnvs.test;
 };
 
 export const checkFile = (path: string): boolean => {
