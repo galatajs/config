@@ -1,6 +1,6 @@
 {
   "name": "@istanbul/config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Config package of Istanbul Framework",
   "keywords": [
     "istanbul",
@@ -9,6 +9,22 @@
   ],
   "author": "Sami Salih İBRAHİMBAŞ",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istanbulnode/config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/istanbulnode/config/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^18.6.3",
