@@ -46,7 +46,7 @@ export const getConfig = <T>(key: string): T | undefined => {
 
 export const getRequiredConfig = <T>(key: string): T => {
   const value = getConfig<T>(key);
-  if (!value) throw new Error(`IstanbulJS - Config ${key} is required`);
+  if (!value) throw new Error(`GalataJS - Config ${key} is required`);
   return value;
 };
 

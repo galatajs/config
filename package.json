@@ -1,20 +1,18 @@
 {
-  "name": "@istanbul/config",
-  "version": "0.0.2",
-  "description": "Config package of Istanbul Framework",
+  "name": "@galatajs/config",
+  "version": "0.1.1",
+  "description": "Config package of galatajs framework",
   "keywords": [
-    "istanbul",
-    "istanbuljs",
     "config"
   ],
   "author": "Sami Salih İBRAHİMBAŞ",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/istanbulnode/config.git"
+    "url": "git+https://github.com/galatajs/config.git"
   },
   "bugs": {
-    "url": "https://github.com/istanbulnode/config/issues"
+    "url": "https://github.com/galatajs/config/issues"
   },
   "directories": {
     "lib": "lib",

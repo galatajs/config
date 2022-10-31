@@ -56,7 +56,7 @@ test("Config Testing", async (t) => {
     try {
       config = getRequiredConfig(key);
     } catch (e) {
-      assert.equal(e.message, `IstanbulJS - Config ${key} is required`);
+      assert.equal(e.message, `GalataJS - Config ${key} is required`);
     }
   });
 });

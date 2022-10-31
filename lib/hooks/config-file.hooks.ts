@@ -12,7 +12,7 @@ export const checkFile = (path: string): boolean => {
 
 export const checkConfigFile = (path: string): boolean => {
   if (!checkFile(path))
-    throw new Error(`IstanbulJS - Config file ${path} not found`);
+    throw new Error(`GalataJS - Config file ${path} not found`);
   return true;
 };
 
